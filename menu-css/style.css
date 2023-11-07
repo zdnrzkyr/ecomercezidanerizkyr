@@ -1,0 +1,104 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body {
+    background-color: #161616;
+    color: white;
+}
+
+:root {
+    --main-color: #ff0000;
+    --second-color: #fff;
+}
+
+section {
+    padding: 100px;
+    /*10%*/
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(51, 51, 51);
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 0px 20px red;
+    padding: 15px 10%;
+    transition: 1s;
+    /* background: transparent; */
+}
+
+header .logo {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+header .logo span {
+    color: red;
+    font-size: 30px;
+}
+
+header .logo,
+span {
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    transition: 1s;
+    padding: 3px;
+}
+
+header #menu-icon {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+}
+
+/* --- */
+
+.menu1 {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.menu1 .menu1-img {
+    flex: 1 1 21rem;
+}
+
